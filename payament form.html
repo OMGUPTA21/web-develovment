@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payament form
+
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 15px 30px;
+        font-size: 17px;
+        padding: 8px;
+        background-color: rgb(52, 189, 52);
+    }
+
+    body:hover {
+        background-color: green;
+    }
+
+    .container {
+        background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid black;
+        border-radius: 4px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="date"] select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    fieldset {
+        background-color: #fff;
+        border: 2px solid #ccc;
+    }
+
+    .main {
+        text-align: center;
+        color: red;
+    }
+
+    h2 {
+        color: red;
+    }
+    .icon{
+        border: 1px solid black;
+        box-sizing: content-box;
+        border-width: 2px;
+        background-color: #ccc;
+    }
+
+
+    input[type="submit"] {
+        background-color: rgb(63, 161, 79);
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #4caf84;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <form action="" method="GET">
+            <h1 class="main"><i class="fa fa-rupee" style="font-size:100px;color:red"></i> <br> PAYAMENT PORTAL</h1>
+            <h2>CUSTOMER INFORMATION</h2>
+            <p>NAME: <input type="text" name="name" placeholder="JOHN LEO" required></p>
+            <fieldset>
+                <legend>GENDER: </legend>
+                <p>
+                    male:<input type="radio" name="gender" id="">
+                    female:<input type="radio" name="gender" id="">
+                    others:<input type="radio" name="gender" id="">
+                </p>
+            </fieldset>
+            <p>ADDRESS:
+                <textarea name="address" id="address" cols="100" rows="10" required
+                    placeholder="enter your address"></textarea>
+            </p>
+            <p>EMAIL: <input type="email" name="email" id="email" required placeholder="ABC@gmail.com"></p>
+            <p>ITEM LINK:<input type="url" name="url" id="url" required placeholder="
+            Casual Hoodie red"></p>
+            <p>PIN CODE: <input type="number" name="pincode" id="pincode" required placeholder="123456"></p>
+            <h2>PAYMENT INFORMATION</h2>
+            <div class="icon">
+                <i class="fa fa-cc-mastercard" style="font-size:48px;color:red"></i>
+                <i class="fa fa-cc-visa" style="font-size:48px;color:red"></i>
+                <i class="fa fa-cc-paypal" style="font-size:48px;color:red"></i>
+                <i class="fa fa-credit-card" style="font-size:48px;color:red"></i>
+            </div>
+            <p>CARD TYPE:
+                <select name="card_type" id="card_type" required>
+                    <option value="">--select the card type--</option>
+                    <option value="visa">VISA</option>
+                    <option value="mastercard">MASTERCARD</option>
+                    <option value="paypal">PAYPAL</option>
+                    <option value="netbanking">NETBANKING</option>
+                    <option value="sbicard">SBI CARD</option>
+                </select>
+            </p>
+            <p>
+                CARD NUMBER: <input type="number" name="cardnumber" id="cardnumber" required
+                    placeholder="1111-2222-3333-4444">
+            </p>
+            <p>
+                EXPIRATION DATE: <input type="date" name="exp_date" id="exp_date" required>
+            </p>
+            <p>
+                CVV: <input type="password" name="cvv" id="cvv" placeholder="123">
+            </p>
+            <input type="submit" value="PAY NOW">
+        </form>
+    </div>
+</body>
+
+</html>
