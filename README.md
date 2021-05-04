@@ -10,6 +10,6 @@ Tech Stack: HTML, CSS, Bootstrap, JavaScript, PHP, SQL, Apache Server (XAMPP)
 
 &nbsp;  
 By,  
-Jimit Dholakia  
-[LinkedIn](https://in.linkedin.com/in/jimit105 "LinkedIn Profile")  
-[GitHub](https://github.com/jimit105 "GitHub Profile")  
+om gupta
+[LinkedIn](https://www.linkedin.com/in/om-gupta-291111198/")  
+[GitHub](https://github.com/OMGUPTA21)  
